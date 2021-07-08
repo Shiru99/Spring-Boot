@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringBootIntroApplication<spring-boot-intro>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "io.summer.springbootintro.SpringBootIntroApplication",
+            "projectName": "spring-boot-intro",
+            "args": ""
+        }
+    ]
+}
