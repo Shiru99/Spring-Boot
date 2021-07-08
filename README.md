@@ -18,3 +18,12 @@ Spring Boot makes it easy to quickly bootstrap and start developing a Spring-bas
 Spring MVC is a Web MVC Framework for building web applications. It contains a lot of configuration files for various capabilities. It is an HTTP oriented web application development framework. <i>Spring MVC is a model view controller-based web framework under the Spring framework.</i>
 
 ---
+
+### <b>Problem with Spring</b>
+
+* Huge framework
+* Multiple setup steps
+* Multiple configuration setup
+* Multiple build & deploy steps 
+
+Spring Boot overcomes all these issues
