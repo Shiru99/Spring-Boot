@@ -39,11 +39,12 @@ public class CourseService {
     }
 
     public void deleteCourse(String id) {
-        for (int i = 0; i < courses.size(); i++) {
-            if (courses.get(i).getId().equals(id)) {
-                courses.remove(i);
-                break;
-            }
-        }
+        courses.removeIf(t-> t.getId().equals(id));
+        // for (int i = 0; i < courses.size(); i++) {
+        //     if (courses.get(i).getId().equals(id)) {
+        //         courses.remove(i);
+        //         break;
+        //     }
+        // }
     }
 }
