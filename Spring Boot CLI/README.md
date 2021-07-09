@@ -17,5 +17,22 @@ $ sdk install springboot
 $ spring --version
 ```
 
+## 2. Running Applications with the CLI
+
+1. create hello.groovy
+```
+@RestController
+class WebApplication {
+
+    @RequestMapping("/")
+    String home() {
+        "Hello World!"
+    }
+}
+```
+
+2. compile and run the application
+
+    $ spring run hello.groovy -- --server.port=9000
 
 
