@@ -24,4 +24,9 @@ public class CourseController {
     public Course getCourse(@PathVariable("id") String id) {
         return courseService.getCourse(id);
     }
+
+    @RequestMapping(method = RequestMethod.POST, value = "/courses")
+    public void addCourse(@RequestBody Course course){
+        courseService.addCourse(course);
+    }
 }
