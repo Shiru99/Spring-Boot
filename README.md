@@ -27,3 +27,7 @@ Spring MVC is a Web MVC Framework for building web applications. It contains a l
 * Multiple build & deploy steps 
 
 Spring Boot overcomes all these issues
+
+---
+
+* [Common Application Properties](https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html)
