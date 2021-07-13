@@ -4,10 +4,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class CourseService {
+
+    @Autowired
+    private CourseRepository courseRepository;
 
     private List<Course> courses = new ArrayList<>(
         Arrays.asList(
@@ -18,7 +22,8 @@ public class CourseService {
     );
 
     public List<Course> getAllCourses() {
-        return courses;
+        List<Course> c = (List<Course>) courseRepository.findAll();
+        return c;
     }
 
     public Course getCourse(String id) {
