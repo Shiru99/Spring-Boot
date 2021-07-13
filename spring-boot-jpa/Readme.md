@@ -64,3 +64,11 @@ test=> \dt;
 test=> select * from table1;
 ```
 ---
+
+### Port 8089 was already in use :
+
+```
+$ lsof -i :8089 | grep LISTEN
+java    354291 shiru  102u  IPv6 240958      0t0  TCP *:8089 (LISTEN)
+$ kill -9 354291
+```
