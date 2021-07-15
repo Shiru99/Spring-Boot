@@ -31,3 +31,22 @@ Spring Boot overcomes all these issues
 ---
 
 * [Common Application Properties](https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html)
+
+---
+## Packaging & Running Spring Boot App
+
+Packaging : 
+```
+$ mvn clean install
+```
+
+Running :
+
+```
+$ java -jar jarName.jar
+```
+
+for WAR file :
+```
+pom.xml : <packaging>war</packaging>
+```
